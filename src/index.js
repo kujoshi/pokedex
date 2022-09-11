@@ -2,10 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import PokedexList  from './components/PokedexList';
-import PokedexDetail from './components/PokedexDetail';
 
 import { Provider } from 'react-redux'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
@@ -24,22 +22,10 @@ const store = createStore(
   },
   composeEnhancers(applyMiddleware(thunk))
 );
-// export const store = configureStore({
-//   reducer: {
-//     pokedexReducer: pokedexReducer,
-//   }
-// })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-    <BrowserRouter>
-      {/* <App /> */}
-      <Routes>
-        <Route path="/" element={<PokedexList />}>
-          <Route path="/detail" element={<PokedexDetail />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+      <PokedexList />
   </Provider>
 );
