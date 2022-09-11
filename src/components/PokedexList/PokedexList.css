@@ -1,0 +1,96 @@
+.header {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 20px);
+  background: #285ea5;
+  padding: 10px 10px;
+  z-index: 3;
+  box-shadow: 2px 2px 8px rgba(200, 208, 211, 0.7);
+  text-align: center;
+  color: #ffffff;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.pokemonCardGrid {
+  padding: 10px !important;
+}
+
+.pokemonImageDIv {
+  display: block;
+  background-color: #E5E5E5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-position: center;
+  background-position: center;
+  width: 100%;
+  object-fit: cover;
+  text-align: center;
+  border: 1px solid #E5E5E5;
+  min-height: 100px;
+}
+
+.pokemonName {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 145%;
+  color: #000000;
+  text-align: center;
+}
+
+.pokemonNumber {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 145%;
+  color: #000000;
+  text-align: center;
+}
+
+.pokemonTextGrid {
+  border: 1px solid #E5E5E5;
+  padding: 5px;
+}
+
+.paginationDiv {
+  margin: 50px !important;
+}
+
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a{
+  background-color: #285ea5 ;
+  border-color: #285ea5 ;
+  color: #fff;
+}
+.pagination > li > a{
+  border: 1px solid #285ea5 ;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: #285ea5 ;
+  border-color: #285ea5;
+  outline: none ;
+}
+.pagination > li > a, .pagination > li > span{
+  color: #285ea5
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+  border-radius: unset
+}
+
+.backButton {
+  float: left;
+}
+
+.searchDiv {
+  margin: 20px !important;
+}
